@@ -275,6 +275,145 @@ footer{
 .hero-btns{animation:fadeUp 0.7s 0.58s both}
 .fade{opacity:0;transform:translateY(16px);transition:opacity 0.7s ease,transform 0.7s ease}
 .fade.in{opacity:1;transform:translateY(0)}
+
+@media (max-width: 768px) {
+  nav{padding:1rem 1.5rem}
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{padding:6rem 1.8rem 3rem;order:1}
+  .hero-left::after{display:none}
+  .hero-right{min-height:55vw;max-height:55vw;order:0}
+  .hero-logo-main{font-size:clamp(1.8rem,8vw,2.5rem)}
+  .hero-logo-sub{font-size:clamp(0.9rem,3vw,1.2rem)}
+  .hero-desc{max-width:100%}
+  .hero-btns{flex-direction:column}
+  .btn-primary,.btn-outline{text-align:center}
+  .stats-bar{grid-template-columns:1fr 1fr}
+  .stat{border-right:none;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .about{grid-template-columns:1fr}
+  .about-img-col{min-height:60vw;max-height:60vw}
+  .about-badge{bottom:1rem;right:1rem}
+  .about-text{padding:3rem 1.8rem}
+  .services{padding:4rem 1.8rem}
+  .services-top{grid-template-columns:1fr;gap:1.5rem}
+  .services-grid{grid-template-columns:1fr}
+  .lavender-band{grid-template-columns:1fr;padding:4rem 1.8rem;gap:2rem}
+  .philosophy{grid-template-columns:1fr;padding:4rem 1.8rem;gap:2rem}
+  .contact{grid-template-columns:1fr}
+  .contact-left{padding:3rem 1.8rem}
+  .contact-right{padding:3rem 1.8rem}
+  .form-row{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:0.8rem;text-align:center;padding:2rem 1.5rem}
+  .section-title{font-size:clamp(1.6rem,5vw,2rem)}
+  .hero-eyebrow{margin-bottom:1rem}
+}
+@media (max-width: 480px) {
+  .hero-right{min-height:70vw;max-height:70vw}
+  .hero-logo-main{font-size:clamp(1.5rem,9vw,2rem)}
+  .stat-num{font-size:1.6rem}
+  .services-grid{grid-template-columns:1fr}
+  .about-img-col{min-height:80vw;max-height:80vw}
+}
+
+@media (max-width: 768px) {
+  nav{padding:1rem 1.5rem}
+  .nav-links{display:none}
+  .nav-logo-main{font-size:1.2rem}
+
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{padding:5rem 1.8rem 3rem;order:2}
+  .hero-left::after{display:none}
+  .hero-right{order:1;height:55vw;max-height:55vw;min-height:240px}
+  .hero-logo-main{font-size:clamp(1.8rem,8vw,2.5rem)}
+  .hero-logo-sub{font-size:clamp(0.9rem,3vw,1.1rem)}
+  .hero-desc{max-width:100%}
+  .hero-btns{flex-direction:column}
+  .btn-primary,.btn-outline{text-align:center;padding:0.85rem 1.5rem}
+
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .stat{padding:1.2rem 0.8rem}
+  .stat-num{font-size:1.6rem}
+
+  .about{grid-template-columns:1fr}
+  .about-img-col{height:70vw;max-height:400px}
+  .about-badge{bottom:1rem;right:1rem}
+  .about-text{padding:2.5rem 1.8rem}
+
+  .services{padding:4rem 1.8rem}
+  .services-top{grid-template-columns:1fr;gap:1.5rem}
+  .services-grid{grid-template-columns:1fr}
+  .service-card{margin-bottom:0}
+
+  .lavender-band{grid-template-columns:1fr;padding:4rem 1.8rem;gap:2rem}
+
+  .philosophy{grid-template-columns:1fr;padding:4rem 1.8rem;gap:2rem}
+  .phil-quote{font-size:1.1rem;padding-left:1.2rem}
+
+  .contact{grid-template-columns:1fr}
+  .contact-left{padding:3rem 1.8rem}
+  .contact-right{padding:3rem 1.8rem}
+  .form-row{grid-template-columns:1fr}
+
+  footer{flex-direction:column;gap:0.8rem;text-align:center;padding:2rem 1.5rem}
+
+  .section-title{font-size:1.6rem}
+  .hero-caption{padding:1.5rem 1.2rem 1rem}
+  .hero-caption-text{font-size:0.95rem}
+
+  .about-pull{font-size:1.05rem}
+}
+
+@media (max-width:480px){
+  .hero-left{padding:4rem 1.4rem 2.5rem}
+  .services{padding:3rem 1.4rem}
+  .about-text{padding:2rem 1.4rem}
+  .contact-left,.contact-right{padding:2.5rem 1.4rem}
+  .philosophy{padding:3rem 1.4rem}
+  .lavender-band{padding:3rem 1.4rem}
+  footer{padding:1.5rem 1.4rem}
+  .stat-num{font-size:1.4rem}
+  .stat-label{font-size:0.55rem}
+}
+
+@media (max-width: 900px) {
+  nav{padding:1rem 1.5rem;flex-wrap:wrap}
+  .nav-links{display:none!important}
+  .nav-logo-main{font-size:1.1rem}
+
+  .hero{grid-template-columns:1fr!important;min-height:auto!important}
+  .hero-left{padding:5rem 1.8rem 3rem!important;order:2!important}
+  .hero-left::after{display:none!important}
+  .hero-right{order:1!important;height:60vw!important;max-height:320px!important;min-height:200px!important}
+
+  .stats-bar{grid-template-columns:repeat(2,1fr)!important}
+
+  .about{grid-template-columns:1fr!important;min-height:auto!important}
+  .about-img-col{height:75vw!important;max-height:380px!important;width:100%!important}
+  .about-text{padding:2.5rem 1.8rem!important;width:100%!important}
+
+  .services{padding:3.5rem 1.5rem!important}
+  .services-top{grid-template-columns:1fr!important;gap:1.5rem!important}
+  .services-grid{grid-template-columns:1fr!important;gap:1rem!important}
+
+  .lavender-band{grid-template-columns:1fr!important;padding:3.5rem 1.5rem!important;gap:2rem!important}
+
+  .philosophy{grid-template-columns:1fr!important;padding:3.5rem 1.5rem!important;gap:2rem!important}
+
+  .contact{grid-template-columns:1fr!important;min-height:auto!important}
+  .contact-left{padding:3rem 1.5rem!important;width:100%!important}
+  .contact-right{padding:3rem 1.5rem!important;width:100%!important}
+  .form-row{grid-template-columns:1fr!important}
+
+  footer{flex-direction:column!important;gap:0.8rem!important;text-align:center!important;padding:1.5rem!important}
+
+  .hero-logo-main{font-size:clamp(1.6rem,7vw,2.2rem)!important}
+  .hero-logo-sub{font-size:clamp(0.85rem,3vw,1rem)!important}
+  .hero-desc{max-width:100%!important}
+  .hero-btns{flex-direction:column!important;gap:0.8rem!important}
+  .btn-primary,.btn-outline{text-align:center!important;width:100%!important}
+  .section-title{font-size:1.5rem!important}
+  .phil-quote{font-size:1.05rem!important;padding-left:1rem!important}
+}
 </style>
 </head>
 <body>
