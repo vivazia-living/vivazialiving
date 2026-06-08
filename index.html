@@ -276,6 +276,54 @@ footer{
 .hero-btns{animation:fadeUp 0.7s 0.58s both}
 .fade{opacity:0;transform:translateY(16px);transition:opacity 0.7s ease,transform 0.7s ease}
 .fade.in{opacity:1;transform:translateY(0)}
+
+@media(max-width:768px){
+  nav{padding:0.9rem 1.2rem}
+  .nav-links{display:none}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{order:2;padding:3rem 1.5rem 2.5rem}
+  .hero-left::after{display:none}
+  .hero-right{order:1;height:60vw;max-height:320px}
+  .hero-logo-main{font-size:2rem}
+  .hero-logo-sub{font-size:1rem}
+  .hero-desc{max-width:100%}
+  .btn-navy,.btn-outline,.btn-gold,.btn-outline-white{display:block;text-align:center;margin-right:0;width:100%;margin-bottom:0.8rem}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat{padding:1.2rem 0.5rem}
+  .stat-num{font-size:1.4rem}
+  .about{grid-template-columns:1fr}
+  .about-img{min-height:60vw;max-height:380px}
+  .about-content{padding:2.5rem 1.5rem}
+  .connection{grid-template-columns:1fr;height:auto}
+  .conn-photo{height:55vw}
+  .credibility{grid-template-columns:1fr}
+  .cred-img{min-height:60vw;max-height:380px}
+  .cred-content{padding:2.5rem 1.5rem}
+  .services{padding:3rem 1.2rem}
+  .services-header{grid-template-columns:1fr;gap:1rem;margin-bottom:2rem}
+  .services-grid{grid-template-columns:1fr!important;gap:1rem}
+  .service-card{width:100%}
+  .charleston-section{height:280px}
+  .charleston-content{left:1.5rem;max-width:90%}
+  .philosophy-content{padding:3rem 1.5rem;max-width:100%}
+  .contact{grid-template-columns:1fr}
+  .contact-left,.contact-right{padding:3rem 1.5rem}
+  .form-row{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:0.8rem;text-align:center;padding:1.5rem}
+  .section-title{font-size:1.5rem}
+  .portrait-section{grid-template-columns:1fr}
+  .portrait-img{min-height:60vw;max-height:380px}
+  .portrait-content{padding:2.5rem 1.5rem}
+  .baby{height:250px}
+  .hero-tagline{font-size:0.75rem}
+}
+@media(max-width:480px){
+  .hero-left{padding:2.5rem 1.2rem 2rem}
+  .about-content,.cred-content,.contact-left,.contact-right,.services,.philosophy-content,.portrait-content{padding-left:1.2rem;padding-right:1.2rem}
+  .stat-num{font-size:1.2rem}
+  .stat-label{font-size:0.5rem}
+  .hero-logo-main{font-size:1.7rem}
+}
 </style>
 </head>
 <body>
