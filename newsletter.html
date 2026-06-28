@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newsletter — Vivazia Living</title>
+<title>Blog — Vivazia Living</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -41,12 +41,11 @@ nav{
 .nav-cta:hover{background:var(--gold)!important}
 
 .page-hero{
-  min-height:60vh;
+  min-height:50vh;
   display:flex;flex-direction:column;justify-content:center;align-items:center;
   text-align:center;
   padding:8rem 2rem 5rem;
   background:var(--cream);
-  position:relative;
 }
 .page-eyebrow{
   font-size:0.65rem;letter-spacing:0.35em;text-transform:uppercase;
@@ -66,19 +65,36 @@ nav{
   font-size:clamp(1.1rem,2vw,1.4rem);
   font-weight:300;font-style:italic;
   color:var(--text-mid);max-width:600px;
-  line-height:1.9;margin-bottom:2.5rem;
+  line-height:1.9;
 }
 
-.newsletter-section{
+.blog-section{
   padding:6rem 2rem;
-  max-width:700px;
+  max-width:900px;
   margin:0 auto;
-  text-align:center;
 }
-.newsletter-intro{
-  font-size:0.9rem;line-height:1.9;
-  color:var(--text-mid);font-weight:300;
-  margin-bottom:3rem;
+
+.coming-soon{
+  text-align:center;
+  padding:5rem 2rem;
+  border:0.5px solid rgba(201,169,110,0.3);
+  background:var(--cream);
+  margin-bottom:4rem;
+}
+.coming-soon-label{
+  font-size:0.65rem;letter-spacing:0.35em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.5rem;font-weight:300;
+}
+.coming-soon-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.5rem,3vw,2.2rem);
+  font-weight:300;font-style:italic;
+  color:var(--navy);margin-bottom:1.5rem;
+}
+.coming-soon-text{
+  font-size:0.9rem;color:var(--text-mid);
+  line-height:1.9;font-weight:300;
+  max-width:500px;margin:0 auto 2.5rem;
 }
 .subscribe-btn{
   display:inline-block;
@@ -87,43 +103,36 @@ nav{
   font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;
   padding:1rem 3rem;text-decoration:none;
   transition:background 0.3s;
-  margin-bottom:1rem;
 }
 .subscribe-btn:hover{background:var(--gold)}
-.subscribe-note{
-  font-size:0.75rem;color:var(--text-light);
-  letter-spacing:0.1em;
-}
 
-.what-to-expect{
-  background:var(--cream);
-  padding:5rem 2rem;
-  text-align:center;
+.categories{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:1.5rem;margin-top:4rem;
 }
-.section-title{
-  font-family:'Cinzel',serif;font-size:1.4rem;
-  letter-spacing:0.2em;color:var(--navy);
-  margin-bottom:3rem;font-weight:600;
-}
-.expect-grid{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:2rem;max-width:800px;margin:0 auto;
-}
-.expect-item{
-  padding:2rem;
+.category-card{
+  padding:2rem 1.5rem;
   border:0.5px solid rgba(201,169,110,0.3);
   background:var(--warm-white);
+  text-align:center;
+  transition:border-color 0.2s;
 }
-.expect-icon{
-  font-size:1.5rem;margin-bottom:1rem;
-}
-.expect-label{
-  font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;
+.category-card:hover{border-color:var(--gold)}
+.category-icon{font-size:1.5rem;margin-bottom:1rem;}
+.category-label{
+  font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;
   color:var(--gold);font-weight:300;margin-bottom:0.5rem;
 }
-.expect-text{
-  font-size:0.85rem;color:var(--text-mid);
-  line-height:1.7;font-weight:300;
+.category-name{
+  font-family:'Cinzel',serif;font-size:0.9rem;
+  color:var(--navy);letter-spacing:0.1em;
+}
+
+.section-title{
+  font-family:'Cinzel',serif;font-size:1.1rem;
+  letter-spacing:0.2em;color:var(--navy);
+  margin-bottom:2rem;font-weight:600;
+  text-align:center;text-transform:uppercase;
 }
 
 footer{
@@ -153,47 +162,60 @@ footer a{color:var(--gold);text-decoration:none;}
 </nav>
 
 <div class="page-hero">
-  <p class="page-eyebrow">Words with intention</p>
-  <h1 class="page-title">The Newsletter</h1>
+  <p class="page-eyebrow">Stories · Insights · Real Talk</p>
+  <h1 class="page-title">The Blog</h1>
   <div class="page-rule"></div>
-  <p class="page-desc">Stories, insights, and real talk — in English & Portuguese. Delivered to your inbox with love.</p>
+  <p class="page-desc">Lifestyle, mindset, culture and intentional living — in English & Portuguese.</p>
 </div>
 
-<section class="newsletter-section">
-  <p class="newsletter-intro">
-    This is a space for those who are building, reinventing, and living with intention. 
-    Each edition brings thoughtful reflections on lifestyle, mindset, culture, and the 
-    art of elevating your everyday — bilingual, honest, and always purposeful.
-  </p>
-  <a href="https://substack.com/@vivazialiving" class="subscribe-btn" target="_blank">Subscribe on Substack</a>
-  <p class="subscribe-note">Free to subscribe · No spam · Unsubscribe anytime</p>
-</section>
+<section class="blog-section">
 
-<div class="what-to-expect">
-  <h2 class="section-title">What to Expect</h2>
-  <div class="expect-grid">
-    <div class="expect-item">
-      <div class="expect-icon">✍🏽</div>
-      <div class="expect-label">Storytelling</div>
-      <p class="expect-text">Real stories, universal truths. Written to make you feel less alone.</p>
+  <div class="coming-soon">
+    <p class="coming-soon-label">Coming Soon</p>
+    <h2 class="coming-soon-title">The first stories are on their way.</h2>
+    <p class="coming-soon-text">
+      This is where it all begins — real stories, honest reflections, and the kind of 
+      content that makes you exhale. Subscribe to the newsletter to be the first to know 
+      when we publish.
+    </p>
+    <a href="newsletter.html" class="subscribe-btn">Get Notified</a>
+  </div>
+
+  <h2 class="section-title">Topics We Explore</h2>
+  <div class="categories">
+    <div class="category-card">
+      <div class="category-icon">✈️</div>
+      <div class="category-label">Category</div>
+      <div class="category-name">Travel & Culture</div>
     </div>
-    <div class="expect-item">
-      <div class="expect-icon">🌍</div>
-      <div class="expect-label">Bilingual</div>
-      <p class="expect-text">Content in English & Portuguese for a global community.</p>
+    <div class="category-card">
+      <div class="category-icon">🧠</div>
+      <div class="category-label">Category</div>
+      <div class="category-name">Mindset & Growth</div>
     </div>
-    <div class="expect-item">
-      <div class="expect-icon">💡</div>
-      <div class="expect-label">Mindset & Life</div>
-      <p class="expect-text">Practical insights on intentional living, growth, and reinvention.</p>
+    <div class="category-card">
+      <div class="category-icon">🏡</div>
+      <div class="category-label">Category</div>
+      <div class="category-name">Home & Design</div>
     </div>
-    <div class="expect-item">
-      <div class="expect-icon">🌿</div>
-      <div class="expect-label">Lifestyle</div>
-      <p class="expect-text">Travel, culture, design, and the beauty of everyday moments.</p>
+    <div class="category-card">
+      <div class="category-icon">💼</div>
+      <div class="category-label">Category</div>
+      <div class="category-name">Business & Life</div>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">🌿</div>
+      <div class="category-label">Category</div>
+      <div class="category-name">Intentional Living</div>
+    </div>
+    <div class="category-card">
+      <div class="category-icon">🇧🇷</div>
+      <div class="category-label">Category</div>
+      <div class="category-name">Em Português</div>
     </div>
   </div>
-</div>
+
+</section>
 
 <footer>
   <p>© 2025 Vivazia Living · <a href="index.html">vivazia.net</a> · Simplify · Inspire · Elevate</p>
