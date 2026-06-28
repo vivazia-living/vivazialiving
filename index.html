@@ -661,25 +661,20 @@ footer{
       <path d="M12 2C6.477 2 2 6.477 2 12C2 16.236 4.636 19.854 8.356 21.312C8.268 20.524 8.188 19.313 8.388 18.465C8.572 17.695 9.532 13.617 9.532 13.617C9.532 13.617 9.244 13.041 9.244 12.185C9.244 10.83 10.019 9.82 10.987 9.82C11.807 9.82 12.203 10.437 12.203 11.175C12.203 12.001 11.681 13.235 11.413 14.378C11.188 15.335 11.888 16.116 12.831 16.116C14.542 16.116 15.854 14.306 15.854 11.694C15.854 9.383 14.213 7.781 11.845 7.781C9.101 7.781 7.498 9.831 7.498 11.949C7.498 12.777 7.812 13.667 8.205 14.152C8.283 14.246 8.294 14.328 8.271 14.424C8.196 14.741 8.029 15.408 7.998 15.537C7.957 15.706 7.861 15.743 7.686 15.661C6.469 15.085 5.688 13.325 5.688 11.913C5.688 8.867 7.878 6.063 12.108 6.063C15.496 6.063 18.122 8.475 18.122 11.649C18.122 14.963 16.027 17.621 13.096 17.621C12.122 17.621 11.206 17.115 10.893 16.52L10.318 18.688C10.104 19.504 9.532 20.527 9.145 21.147C10.069 21.424 11.017 21.571 12 21.571C17.523 21.571 22 17.094 22 11.571C22 6.048 17.523 1.571 12 1.571C6.477 1.571 2 6.048 2 11.571L12 2Z" fill="currentColor"/>
     </svg>
     Pinterest
-  </a>
-  <span class="footer-copy">&copy; 2026 Vivazia Living &middot; Charleston, SC</span>
-</footer>
+<a href="https://www.instagram.com/vivazialiving" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;color:rgba(201,169,110,0.6);font-size:0.7rem;letter-spacing:0.15em;margin-left:2rem;">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="#C9A96E" stroke-width="1.5"/>
+    <circle cx="12" cy="12" r="5" stroke="#C9A96E" stroke-width="1.5"/>
+    <circle cx="17.5" cy="6.5" r="1" fill="#C9A96E"/>
+  </svg>
+  Instagram
+</a>
 
-<script>
-window.addEventListener('scroll',()=>{
-  document.querySelector('nav').style.boxShadow=window.scrollY>40?'0 2px 20px rgba(0,0,0,0.06)':'none';
-});
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)}});
-},{threshold:0.12});
-document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
-function handleSubmit(e){
-  e.preventDefault();
-  const btn=document.getElementById('submit-btn');
-  btn.textContent='Message Sent ✓';
-  btn.style.background='#C9A96E';
-  setTimeout(()=>{btn.textContent='Send Message';btn.style.background='';e.target.reset()},3000);
-}
-</script>
-</body>
-</html>
+<a href="https://substack.com/@vivazialiving" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;color:rgba(201,169,110,0.6);font-size:0.7rem;letter-spacing:0.15em;margin-left:2rem;">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2" y="3" width="20" height="3" fill="#C9A96E"/>
+    <rect x="2" y="8" width="20" height="3" fill="#C9A96E"/>
+    <path d="M2 13h20v8L12 16 2 21V13z" fill="#C9A96E"/>
+  </svg>
+  Substack
+</a>
